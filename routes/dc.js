@@ -37,8 +37,8 @@ router.get('/delete/:id', (req, res) => {
             console.log(err)
         } else {
             console.log("Delete the item succeed !");
-            //var message = "Delete student succeed !";
-            //redirect về trang /student (URL không phải view)
+            //var message = "Delete toy succeed !";
+            //redirect về trang /toy (URL không phải view)
             res.redirect("/dc");
         }
     })
