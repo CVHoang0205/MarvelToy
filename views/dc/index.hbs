@@ -1,6 +1,6 @@
-<table class="table table-bordered table-success p-4 mt-3 mb-3 text-center">
+<table class="table table-bordered table-responsive p-4 mt-3 mb-3 text-center" >
    <tr>
-      <th class="text-primary" colspan="5">Puzzle toys list</th>
+      <th class="text-primary" colspan="5"><h3 style="font-size:40px; color: rgb(148, 60, 60);">Puzzle toys list</h3></th>
       <th>
          <a class="btn btn-primary" href="/dc/add">ADD</a>
          <a class="btn btn-success" href="/dc/drop"
@@ -8,19 +8,19 @@
       </th>
    </tr>
    <tr>
-      <th>Name</th>
-      <th>Origin</th>
-      <th>Material</th>
-      <th>Image</th>
-      <th>Price</th>
-      <th>Status</th>
-      <th>Menu</th>
+      <th style="font-family: Arial; font-size:20px; color: white;">Name</th>
+      <th style="font-family: Arial; font-size:20px; color: white;">Origin</th>
+      <th style="font-family: Arial; font-size:20px; color: white;">Material</th>
+      <th style="font-family: Arial; font-size:20px; color: white;">Image</th>
+      <th style="font-family: Arial; font-size:20px; color: white;">Price</th>
+      <th style="font-family: Arial; font-size:20px; color: white;">Status</th>
+      <th style="font-family: Arial; font-size:20px; color: white;">Menu</th>
    </tr>
    <tr>
       <th colspan="6">
          <select class="form-control" onchange="window.location.href=this.value">
             <option value="">Sort by name</option>
-            <option value="/dc/sort/asc">Ascending</option>
+            <option value="/dc/sort/asc" >Ascending</option>
             <option value="/dc/sort/desc">Descending</option>
          </select>
       </th>
@@ -34,16 +34,16 @@
    </tr>
    {{#each dc }}
    <tr>
-      <td>{{name}}</td>
-      <td>{{origin}}</td>
-      <td>{{material}}</td>
+      <td style="font-size:20px; color: white;">{{name}}</td>
+      <td style="font-size:20px; color: white;">{{origin}}</td>
+      <td style="font-size:20px; color: white;">{{material}}</td>
       <td>
          <a href="/dc/detail/{{_id}}">
             <img src="{{image}}" width="100" height="100">
          </a>
       </td>
-      <td>{{price}}</td>
-      <td>{{status}}</td>
+      <td style="font-size:20px; color: white;">{{price}}</td>
+      <td style="font-size:20px; color: white;">{{status}}</td>
 
       <td>
          <a class="btn btn-warning" href="/dc/edit/{{_id}}">EDIT</a>
