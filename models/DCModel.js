@@ -5,9 +5,9 @@ var DCSchema = new mongoose.Schema({
     status: String,
     origin: String,
     image: String,
-    price: String,
-    material: String
-
+    price: Number,
+    material: String,
+    Year: Date
 })
 
 var DCModel = mongoose.model('DC', DCSchema, 'dc')

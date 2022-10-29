@@ -13,6 +13,7 @@
       <th style="font-family: Arial; font-size:20px; color: white;">Material</th>
       <th style="font-family: Arial; font-size:20px; color: white;">Image</th>
       <th style="font-family: Arial; font-size:20px; color: white;">Price</th>
+      <th style="font-family: Arial; font-size:20px; color: white;">Year</th>
       <th style="font-family: Arial; font-size:20px; color: white;">Status</th>
       <th style="font-family: Arial; font-size:20px; color: white;">Menu</th>
    </tr>
@@ -24,7 +25,7 @@
             <option value="/dc/sort/desc">Descending</option>
          </select>
       </th>
-      <th colspan="1">
+      <th colspan="2">
          <form action="/dc/search" method="post">
             <div class="form-group">
                <input class="form-control" type="search" name="name" placeholder="Search by name">
@@ -42,7 +43,8 @@
             <img src="{{image}}" width="100" height="100">
          </a>
       </td>
-      <td style="font-size:20px; color: white;">{{price}}</td>
+      <td style="font-size:20px; color: white;">{{price}} $</td>
+      <td style="font-size:20px; color: white;">{{dateFormat dc.Year "DD/MM/YYYY"}}</td>
       <td style="font-size:20px; color: white;">{{status}}</td>
 
       <td>
